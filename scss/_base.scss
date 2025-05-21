@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background: $color-black;
+  color: $text-light;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

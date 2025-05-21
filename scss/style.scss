@@ -1,0 +1,20 @@
+// Main SCSS File
+
+// Import Variables and Mixins first
+@import "variables";
+@import "mixins";
+
+// Base styles
+@import "base";
+
+// Layout components
+@import "layout";
+
+// UI Components
+@import "components";
+
+// Page sections
+@import "sections";
+
+// Responsive styles (always last)
+@import "responsive";

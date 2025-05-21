@@ -1,0 +1,128 @@
+// Header
+header {
+  background: $color-dark-gray;
+  color: $text-light;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: $color-primary;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+
+  li {
+    margin-left: 1.5rem;
+
+    a {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: $text-light;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
+  color: $color-black;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 0 0 60px 60px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+}
+
+// Footer
+footer {
+  background: $color-dark-gray;
+  padding: 3rem 1rem;
+  color: $text-light;
+  margin-top: 3rem;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .footer-about,
+  .footer-contact,
+  .footer-links {
+    flex: 1 1 250px;
+  }
+
+  h3 {
+    color: $color-primary;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  p,
+  li,
+  a {
+    color: $text-medium;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 0.8rem;
+
+      a {
+        color: $text-medium;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
