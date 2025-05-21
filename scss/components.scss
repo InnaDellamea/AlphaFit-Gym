@@ -1,138 +1,30 @@
-// Buttons
-.btn-primary {
-  background: $color-black;
-  color: $color-primary;
-  font-weight: 700;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 10px #229799;
-  cursor: pointer;
-  border: none;
-  transition: background 0.2s ease, color 0.3s ease;
-
-  &:hover {
-    background: $color-primary;
-    color: $color-black;
-  }
-}
-
-// Cards
-.card {
-  margin: 2rem;
-  padding: 1.5rem;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: $color-light;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-}
-
-.card-content {
-  padding: 1.5rem;
-}
-
-.card-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: $color-primary;
-}
-
-.card-desc {
-  font-size: 1rem;
-  color: $text-card;
-}
-
-// Trainer Cards
-.trainer-card {
-  text-align: center;
-  background-color: $color-light;
-  padding: 1.5rem;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-  }
-}
-
-.trainer-info {
-  padding: 1.5rem;
-}
-
-.trainer-name {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: $color-primary;
-}
-
-.trainer-desc {
-  font-size: 1rem;
-  color: $text-card;
-}
-
-// Form inputs
-input,
-textarea {
-  padding: 0.75rem 1rem;
-  border-radius: 10px;
-  border: 1.5px solid #38c6a8;
-  font-size: 1rem;
-  font-family: $font-family;
-  background: $color-black;
-  color: $text-light;
-  transition: border-color 0.3s ease;
-
-  &:focus {
-    outline: none;
-    border-color: $color-primary;
-  }
-}
-
-// Social Icons
 .social-icons {
   display: flex;
   gap: 1rem;
   margin-top: 0.8rem;
+}
 
-  a {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    color: $text-light;
-    background: $color-black;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 36px;
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: $color-dark-gray;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(29, 205, 159, 0.5);
+  transition: background 0.3s ease, color 0.3s ease;
+
+  i {
     font-size: 18px;
-    box-shadow: 0 2px 6px rgba(29, 205, 159, 0.5);
-    transition: background 0.3s ease, color 0.3s ease;
+    color: $color-black !important;
+  }
 
-    &:hover {
-      background: $color-primary;
-      color: $color-black;
+  &:hover {
+    background: $color-primary;
+
+    i {
+      color: $color-dark-gray !important;
     }
   }
 }
