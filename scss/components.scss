@@ -6,10 +6,10 @@
   padding: 0.75rem 2rem;
   border-radius: 30px;
   font-size: 1.1rem;
-  box-shadow: 0 4px 10px rgba(29, 205, 159, 0.3);
+  box-shadow: 0 4px 10px #229799;
   cursor: pointer;
   border: none;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.2s ease, color 0.3s ease;
 
   &:hover {
     background: $color-primary;
@@ -19,15 +19,17 @@
 
 // Cards
 .card {
-  background: $card-bg;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px $card-shadow;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
   overflow: hidden;
+  background-color: $color-light;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: $text-light;
 
   &:hover {
-    @include card-hover;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
 
   img {
@@ -55,16 +57,17 @@
 
 // Trainer Cards
 .trainer-card {
-  background: $card-bg;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px $card-shadow;
   text-align: center;
+  background-color: $color-light;
+  padding: 1.5rem;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: $text-light;
 
   &:hover {
-    @include card-hover;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
 
   img {

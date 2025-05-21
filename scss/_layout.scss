@@ -22,25 +22,29 @@ img {
   height: auto;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
+.nav-links li a {
+  position: relative;
+  transition: color 0.3s ease;
 
-  li {
-    margin-left: 1.5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: $color-secondary;
+    transition: width 0.3s ease;
+  }
 
-    a {
-      font-weight: 600;
-      font-size: 1.2rem;
-      color: $text-light;
+  &:hover {
+    color: $color-secondary;
+  }
 
-      &:hover {
-        color: $color-secondary;
-      }
-    }
+  &:hover::after {
+    width: 100%;
   }
 }
-
 // Hero Section
 .hero {
   background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
