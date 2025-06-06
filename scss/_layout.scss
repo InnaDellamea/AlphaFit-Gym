@@ -91,12 +91,7 @@ footer {
     gap: 2rem;
     justify-content: space-between;
   }
-  .copyright {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    color: $text-medium;
-  }
+
   .footer-about,
   .footer-contact,
   .footer-links {
@@ -109,7 +104,13 @@ footer {
     font-size: 1.5rem;
   }
 
-  p,
+  .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: $text-medium;
+  }
+
   li,
   a {
     color: $text-medium;
